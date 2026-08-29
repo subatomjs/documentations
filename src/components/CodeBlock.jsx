@@ -57,8 +57,8 @@ export const CodeBlock = ({ code, language = "typescript", title }) => {
 
       {/* Code Body */}
       <div className="p-4 overflow-x-auto text-[12px] font-mono leading-relaxed bg-white dark:bg-[#0b0f19]">
-        <pre className="!bg-transparent !p-0 !m-0">
-          <code className={`language-${language} !bg-transparent`}>
+        <pre className="bg-transparent! p-0! m-0!">
+          <code className={`language-${language} bg-transparent!`}>
             {code}
           </code>
         </pre>
