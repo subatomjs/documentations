@@ -1,5 +1,7 @@
 import { DOCS_NAVIGATION, SITE_METADATA } from "./lib/docs-config";
 
+export const dynamic = "force-static";
+
 export default function sitemap() {
   const routes = [
     {

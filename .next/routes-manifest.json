@@ -1,0 +1,183 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/docs",
+      "regex": "^/docs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs(?:/)?$"
+    },
+    {
+      "page": "/docs/api/client",
+      "regex": "^/docs/api/client(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/api/client(?:/)?$"
+    },
+    {
+      "page": "/docs/api/deployment",
+      "regex": "^/docs/api/deployment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/api/deployment(?:/)?$"
+    },
+    {
+      "page": "/docs/api/observability",
+      "regex": "^/docs/api/observability(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/api/observability(?:/)?$"
+    },
+    {
+      "page": "/docs/api/server",
+      "regex": "^/docs/api/server(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/api/server(?:/)?$"
+    },
+    {
+      "page": "/docs/api/socket",
+      "regex": "^/docs/api/socket(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/api/socket(?:/)?$"
+    },
+    {
+      "page": "/docs/architecture",
+      "regex": "^/docs/architecture(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/architecture(?:/)?$"
+    },
+    {
+      "page": "/docs/cookbooks/acknowledgements",
+      "regex": "^/docs/cookbooks/acknowledgements(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/cookbooks/acknowledgements(?:/)?$"
+    },
+    {
+      "page": "/docs/cookbooks/broadcasting",
+      "regex": "^/docs/cookbooks/broadcasting(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/cookbooks/broadcasting(?:/)?$"
+    },
+    {
+      "page": "/docs/cookbooks/private-messaging",
+      "regex": "^/docs/cookbooks/private\\-messaging(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/cookbooks/private\\-messaging(?:/)?$"
+    },
+    {
+      "page": "/docs/cookbooks/rooms-presence",
+      "regex": "^/docs/cookbooks/rooms\\-presence(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/cookbooks/rooms\\-presence(?:/)?$"
+    },
+    {
+      "page": "/docs/deployment",
+      "regex": "^/docs/deployment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/deployment(?:/)?$"
+    },
+    {
+      "page": "/docs/quickstart",
+      "regex": "^/docs/quickstart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/quickstart(?:/)?$"
+    },
+    {
+      "page": "/docs/reliability/auth-middleware",
+      "regex": "^/docs/reliability/auth\\-middleware(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/reliability/auth\\-middleware(?:/)?$"
+    },
+    {
+      "page": "/docs/reliability/backpressure",
+      "regex": "^/docs/reliability/backpressure(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/reliability/backpressure(?:/)?$"
+    },
+    {
+      "page": "/docs/reliability/clustering",
+      "regex": "^/docs/reliability/clustering(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/reliability/clustering(?:/)?$"
+    },
+    {
+      "page": "/docs/reliability/heartbeats",
+      "regex": "^/docs/reliability/heartbeats(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/reliability/heartbeats(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
