@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Base Surfaces (Banana Leaf Light & Fresh Gradients) */
+    --bg-primary: #fcfdfa;
+    --bg-secondary: #f4f7f0;
+    --bg-tertiary: #eaefe2;
+    --bg-card: #ffffff;
+
+    /* High-Contrast Typography */
+    --text-primary: #111813; /* Deep obsidian black */
+    --text-secondary: #2d3b32; /* Deep moss slate */
+    --text-muted: #5c6b60;
+
+    /* Borders */
+    --border-color: #d4e0cb;
+    --border-subtle: #e4ebd9;
+
+    /* Code Block (Light Mode) */
+    --bg-code: #ffffff;
+    --bg-code-header: #f4f7f0;
+    --border-code: #c8d7bd;
+    --text-code-plain: #111813;
+
+    /* Terminal (Light Mode) */
+    --bg-terminal: #f4f7f0;
+    --bg-terminal-header: #eaefe2;
+    --border-terminal: #d4e0cb;
+    --text-terminal: #111813;
+    --terminal-prompt: #448420;
+
+    /* Brand Accents (Banana Leaf Green & Black/Gray Gradients) */
+    --brand-primary: #58a729; /* Vibrant banana leaf */
+    --brand-hover: #448420;
+    --brand-glow: rgba(88, 167, 41, 0.18);
+    --gradient-surface: linear-gradient(135deg, #fcfdfa 0%, #edf3e6 100%);
+  }
+
+  .dark {
+    /* Base Surfaces (Deep Black & Rich Forest Gradients) */
+    --bg-primary: #080a08; /* Deep obsidian black */
+    --bg-secondary: #0d120f;
+    --bg-tertiary: #141c17;
+    --bg-card: #0f1511;
+
+    /* Dark Mode Typography */
+    --text-primary: #f2f7f4;
+    --text-secondary: #9cb3a4;
+    --text-muted: #6b8273;
+
+    /* Borders */
+    --border-color: #1b261e;
+    --border-subtle: #141c17;
+
+    /* Code Block (Dark Mode) */
+    --bg-code: #0a0e0b;
+    --bg-code-header: #111813;
+    --border-code: #1b261e;
+    --text-code-plain: #f2f7f4;
+
+    /* Terminal (Dark Mode) */
+    --bg-terminal: #060806;
+    --bg-terminal-header: #0d120f;
+    --border-terminal: #1b261e;
+    --text-terminal: #f2f7f4;
+    --terminal-prompt: #76c642;
+
+    /* Brand Accents */
+    --brand-primary: #65b83b; /* Electric banana leaf */
+    --brand-hover: #7cd24c;
+    --brand-glow: rgba(101, 184, 59, 0.25);
+    --gradient-surface: linear-gradient(135deg, #080a08 0%, #111813 100%);
+  }
+
+  /* Universal pointer cursor for all interactive elements */
+  button,
+  [role="button"],
+  a,
+  input[type="button"],
+  input[type="submit"],
+  .cursor-pointer,
+  svg.cursor-pointer {
+    /* biome-ignore lint/complexity/noImportantStyles: explanation */
+    cursor: pointer !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Modern Banana Leaf Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--bg-secondary, #f1f5f9);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #10b981; /* Emerald / Leaf accent */
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #059669; /* Darker leaf shade */
+  }
+
+  /* Firefox support */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #bce28080 var(--bg-secondary, #f1f5f9);
+  }
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    background-image: var(--gradient-surface);
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+}
+
+/* Deep, readable syntax colors for Light Mode */
+:root {
+  --token-comment: #5c6b60;
+  --token-punct: #2d3b32;
+  --token-bool-num: #1b6ca8;
+  --token-string: #427804; /* Leaf green */
+  --token-operator: #a62621;
+  --token-keyword: #4c38d5;
+  --token-function: #ab6a00;
+  --token-regex: #b81d43;
+}
+
+/* Vibrant neon syntax colors for Dark Mode */
+.dark {
+  --token-comment: #6b8273;
+  --token-punct: #9cb3a4;
+  --token-bool-num: #38bdf8;
+  --token-string: #7cd24c; /* Bright banana leaf */
+  --token-operator: #f472b6;
+  --token-keyword: #818cf8;
+  --token-function: #fbbf24;
+  --token-regex: #f87171;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--token-comment);
+  font-style: italic;
+}
+.token.punctuation {
+  color: var(--token-punct);
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: var(--token-bool-num);
+  font-weight: 500;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+  color: var(--token-string);
+}
+.token.operator,
+.token.entity,
+.token.url {
+  color: var(--token-operator);
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--token-keyword);
+  font-weight: 600;
+}
+.token.function,
+.token.class-name {
+  color: var(--token-function);
+}
+.token.regex,
+.token.important,
+.token.variable {
+  color: var(--token-regex);
+}
+
+/* Animation keyframes */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.06);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 8s ease-in-out infinite;
+}
+
+/* Scroll reveal classes */
+.aos-init {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}

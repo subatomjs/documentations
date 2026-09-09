@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://infer.subatomjs.dev/sitemap.xml
