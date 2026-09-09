@@ -26,6 +26,7 @@
     "@types/react": "19.2.18",
     "babel-plugin-react-compiler": "1.0.0",
     "tailwindcss": "^4",
-    "typescript": "7.0.2"
+    "typescript": "7.0.2",
+    "wrangler": "^4.15.2"
   }
 }
