@@ -1,3 +1,0 @@
-module.exports=[44194,a=>{"use strict";a.s(["default",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/app/error.js from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/app/error.js","default")},79493,a=>{"use strict";var b=a.i(44194);a.n(b)},89219,function(a){a.n(a.i(79493))}];
-
-//# sourceMappingURL=app_error_192qqdb.js.map
