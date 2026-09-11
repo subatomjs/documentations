@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next';
 import { allDocs } from '@/lib/docs';
 
-const baseUrl = 'https://docs.subatomjs.dev';
+const baseUrl = 'https://subatomjs.dev';
+export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const docs = allDocs.map((doc) => ({

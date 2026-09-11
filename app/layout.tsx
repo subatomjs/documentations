@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://docs.subatomjs.dev'),
+  metadataBase: new URL('https://subatomjs.dev'),
   title: {
     default: 'Subatom.js Documentation',
     template: '%s — Subatom.js Documentation',
