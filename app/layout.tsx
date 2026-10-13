@@ -1,3 +1,4 @@
+
 import './globals.css';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
@@ -56,8 +57,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: noFlashScript }} />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1076275714941453"
-     crossorigin="anonymous"></script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1076275714941453"
+          crossOrigin="anonymous"
+        />
       </head>
       <body
         suppressHydrationWarning
