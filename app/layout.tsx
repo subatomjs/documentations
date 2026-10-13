@@ -56,6 +56,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: noFlashScript }} />
+        <meta name="google-adsense-account" content="ca-pub-1076275714941453">
       </head>
       <body
         suppressHydrationWarning
